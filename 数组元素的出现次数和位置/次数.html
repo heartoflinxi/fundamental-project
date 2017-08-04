@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>元素出现的次数</title>
+</head>
+<body>
+
+</body>
+<script>
+    var arr = [1,27,3,,65,1,65,3,65,3];
+    var obj = {};
+    for(var k in arr){
+        var item = arr[k];
+        if(obj[item]){
+            obj[item] += 1
+        } else{
+            obj[item] = 1
+        }
+    }
+    console.log(obj);
+    for(var k in obj){
+       console.log(k);
+    }
+</script>
+</html>

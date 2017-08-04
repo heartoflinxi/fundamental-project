@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>元素出现的位置</title>
+</head>
+<body>
+
+</body>
+<script>
+    var arr = [1,27,3,4,65,1,65,3,65,3];
+    /*for(var k in arr){
+        if(arr[k] == 3){
+            console.log(k);
+        }
+    }*/
+    var index = -1;
+    do{
+        index = arr.indexOf(3,index+1);
+        console.log(index);
+    }
+    while(index != -1);
+    
+</script>
+</html>
